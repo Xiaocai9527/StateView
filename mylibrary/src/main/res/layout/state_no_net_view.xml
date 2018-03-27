@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@id/state_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@id/state_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_19dp"
+        android:text="您没有联网，请检查网络连接。"
+        android:textColor="@color/text_color_emptyview"
+        android:textSize="@dimen/dimen_11sp"/>
+
+    <Button
+        android:id="@id/btn_set_network"
+        android:layout_width="122dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:background="@drawable/common_btn_bg_selector_white"
+        android:text="点击设置网络"
+        android:textColor="@color/text_color_emptyview"
+        android:textSize="@dimen/dimen_12sp"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="state_icon" type="id">state_icon</item>
+    <item name="state_info" type="id">state_info</item>
+    <item name="btn_retry" type="id">btn_retry</item>
+    <item name="btn_set_network" type="id">btn_set_network</item>
+    <item name="contentView" type="id">contentView</item>
+</resources>
