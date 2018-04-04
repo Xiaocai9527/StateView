@@ -50,6 +50,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //执行网络加载
             }
         });
+
+        mStateView.setOnRefreshClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                mStateView.showLoading();
+            }
+        });
     }
 
     private void initListener(View... views)

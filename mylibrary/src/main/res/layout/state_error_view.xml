@@ -9,25 +9,28 @@
         android:id="@id/state_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:src="@mipmap/searchcar_dataerror_tips"/>
 
     <TextView
         android:id="@id/state_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/dimen_19dp"
-        android:text="数据加载失败,请刷新重试"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:text="数据错误，请点击重试"
         android:textColor="@color/text_color_emptyview"
-        android:textSize="@dimen/dimen_11sp"/>
+        android:textSize="@dimen/dimen_14sp"/>
 
     <Button
         android:id="@id/btn_retry"
-        android:layout_width="122dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginTop="@dimen/dimen_18dp"
-        android:background="@drawable/common_btn_bg_selector_white"
-        android:text="刷新重试"
-        android:textColor="@color/text_color_emptyview"
-        android:textSize="@dimen/dimen_12sp"/>
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@drawable/bg_3a62ac_3dp"
+        android:paddingLeft="@dimen/dimen_5dp"
+        android:paddingRight="@dimen/dimen_5dp"
+        android:text="点击重试"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_14sp"/>
 </LinearLayout>

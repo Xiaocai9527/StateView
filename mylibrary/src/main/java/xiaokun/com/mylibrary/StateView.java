@@ -21,9 +21,7 @@ import static android.provider.Settings.ACTION_WIRELESS_SETTINGS;
  * <pre>
  *     作者   : 肖坤
  *     时间   : 2018/03/26
- *     描述   : 状态布局view
- *              参考自https://github.com/xiaoxie/LoadingView
- *              加载布局动画参考自https://github.com/zyao89/ZLoading
+ *     描述   :
  *     版本   : 1.0
  * </pre>
  */
@@ -61,6 +59,10 @@ public class StateView extends FrameLayout
      * 点击重试接口
      */
     private OnClickListener onRetryClickListener;
+    /**
+     * 点击刷新接口
+     */
+    private OnClickListener onRefreshClickListener;
 
     public StateView(@NonNull Context context)
     {
@@ -124,6 +126,18 @@ public class StateView extends FrameLayout
             }
         });
 
+        findViewById(R.id.btn_refresh).setOnClickListener(new OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                if (onRefreshClickListener != null)
+                {
+                    onRefreshClickListener.onClick(v);
+                }
+            }
+        });
+
         findViewById(R.id.btn_set_network).setOnClickListener(new OnClickListener()
         {
             @Override
@@ -142,13 +156,23 @@ public class StateView extends FrameLayout
     }
 
     /**
-     * 设置点击刷新重试按钮
+     * 设置点击重试按钮
      *
      * @param onRetryClickListener
      */
     public void setOnRetryClickListener(OnClickListener onRetryClickListener)
     {
         this.onRetryClickListener = onRetryClickListener;
+    }
+
+    /**
+     * 设置刷新按钮
+     *
+     * @param onRefreshClickListener
+     */
+    public void setOnRefreshClickListener(OnClickListener onRefreshClickListener)
+    {
+        this.onRefreshClickListener = onRefreshClickListener;
     }
 
     /**
@@ -211,7 +235,7 @@ public class StateView extends FrameLayout
         for (int i = 0; i < this.getChildCount(); i++)
         {
             View child = this.getChildAt(i);
-            if (child.getId() == contentView)
+            if (i == 4 || child.getId() == contentView)
             {
                 child.setVisibility(VISIBLE);
             } else
