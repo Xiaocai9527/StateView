@@ -7,10 +7,6 @@ import android.widget.Button;
 
 import xiaokun.com.mylibrary.StateView;
 
-/**
- * 若是需要重新定义布局界面，那么需要在项目中重新建立一个layout名字完全一样的布局
- * eg：state_loading_view.xml
- */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
 

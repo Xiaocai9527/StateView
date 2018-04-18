@@ -93,6 +93,7 @@ public class StateView extends FrameLayout
             inflater.inflate(errorView, this, true);
             inflater.inflate(loadingView, this, true);
             inflater.inflate(noNetView, this, true);
+            inflater.inflate(contentView, this, true);
         } catch (Exception e)
         {
             e.printStackTrace();

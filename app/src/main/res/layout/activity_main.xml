@@ -49,18 +49,17 @@
             android:layout_weight="1"
             android:text="内容"/>
 
-
     </LinearLayout>
 
     <xiaokun.com.mylibrary.StateView
         android:id="@+id/state_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:contentView="@id/contentView">
+        app:loadingView="@layout/sv_loading_view"
+        app:contentView="@layout/content_view">
 
-        <include
-            android:id="@id/contentView"
-            layout="@layout/content_view"/>
+        <!--<include-->
+            <!--layout="@layout/content_view"/>-->
 
     </xiaokun.com.mylibrary.StateView>
 
