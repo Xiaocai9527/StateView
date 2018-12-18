@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="xiaokun.com.stateview.MainActivity">
+    tools:context="cn.xiaokun.stateview.MainActivity">
 
 
     <LinearLayout
@@ -51,7 +51,7 @@
 
     </LinearLayout>
 
-    <xiaokun.com.mylibrary.StateView
+    <cn.xiaokun.state_view.StateView
         android:id="@+id/state_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -61,6 +61,6 @@
         <!--<include-->
             <!--layout="@layout/content_view"/>-->
 
-    </xiaokun.com.mylibrary.StateView>
+    </cn.xiaokun.state_view.StateView>
 
 </LinearLayout>
